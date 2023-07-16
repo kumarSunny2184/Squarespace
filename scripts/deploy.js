@@ -15,7 +15,7 @@ async function main() {
   // Setup accounts
   const [deployer] = await ethers.getSigners()
 
-  // Deploy Dappazon
+  // Deploy Squarespace
   const Squarespace = await hre.ethers.getContractFactory("Squarespace")
   const squarespace = await Squarespace.deploy()
   await squarespace.deployed()
